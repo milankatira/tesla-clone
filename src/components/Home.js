@@ -2,10 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 import Section from './Section';
+import { Provider } from 'react-redux';
+import {Store} from '../app/store'
 const Home = () => {
     return (
         <Container>
+        <Provider store={Store}>
         <Header/>
+        </Provider>
             <Section
                 title="model s"
                 description="order online for touchless delivery"

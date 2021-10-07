@@ -1,6 +1,9 @@
+import { configureStore } from "@reduxjs/toolkit";
 
-// export const store = configureStore({
-//   reducer: {
+import carReducer from "../features/car/carSlice"
 
-//   },
-// });
+export const Store = configureStore({
+    reducer: {
+        car: carReducer
+    }
+})
